@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kavun/static/css/main.8dc822fe.css",
-    "main.js": "/kavun/static/js/main.5e42c160.js",
+    "main.js": "/kavun/static/js/main.6f4ee260.js",
     "index.html": "/kavun/index.html",
     "main.8dc822fe.css.map": "/kavun/static/css/main.8dc822fe.css.map",
-    "main.5e42c160.js.map": "/kavun/static/js/main.5e42c160.js.map"
+    "main.6f4ee260.js.map": "/kavun/static/js/main.6f4ee260.js.map"
   },
   "entrypoints": [
     "static/css/main.8dc822fe.css",
-    "static/js/main.5e42c160.js"
+    "static/js/main.6f4ee260.js"
   ]
 }
