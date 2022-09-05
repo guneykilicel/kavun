@@ -1,12 +1,10 @@
+import Home from "./components/home";
 
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        kavun
-      </header>
+    <div>
+      <Home />
     </div>
   );
 }

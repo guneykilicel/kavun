@@ -1,0 +1,24 @@
+
+/* @media screen and (max-width: 1060px) {
+    .repo {
+        flex-direction: column;
+    }
+} */
+.gradient-orange {
+    background: linear-gradient(321.73deg,#ffcd4b -1.09%,#ee6315 100.65%);
+}
+.gradient-blue {
+    background: linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+}
+.gradient-pink {
+    background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+}
+.gradient-cyan {
+    background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+}
+.gradient-dark-purple {
+    background: linear-gradient(138.46deg,#3e70ff 1.48%,#9a98ff 98.75%),#ff73fa;
+}
+.gradient-purple {
+    background: linear-gradient(141.85deg,#7e7bff,#ff73fa);
+}
