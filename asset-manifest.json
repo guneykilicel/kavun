@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kavun/static/css/main.073c9b0a.css",
+    "main.js": "/kavun/static/js/main.0e747fba.js",
+    "static/js/787.0137c4d1.chunk.js": "/kavun/static/js/787.0137c4d1.chunk.js",
+    "index.html": "/kavun/index.html",
+    "main.073c9b0a.css.map": "/kavun/static/css/main.073c9b0a.css.map",
+    "main.0e747fba.js.map": "/kavun/static/js/main.0e747fba.js.map",
+    "787.0137c4d1.chunk.js.map": "/kavun/static/js/787.0137c4d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.0e747fba.js"
+  ]
+}
