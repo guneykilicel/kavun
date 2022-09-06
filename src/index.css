@@ -4,6 +4,6 @@
 
 @layer base {
   html, body, #root {
-    @apply h-full bg-zinc-50 p-3 bg-dcdark
+    @apply h-full bg-[#eaebed]
   }
 }

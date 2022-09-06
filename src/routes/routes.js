@@ -1,19 +1,36 @@
-import Home from "../components/home"
-import Login from "../components/login"
-
-
+import Home from "../pages/home";
+import Login from "../pages/auth/login";
+import MainLayout from "../pages/layout";
+import AuthLayout from "../pages/auth";
+import Register from "../pages/auth/register";
 
 const routes = [
-    {
-        path: '/kavun/',
-        element: <Home />,
-        auth: true
-    },
-    {
-        path: '/kavun/login',
-        element: <Login />
-    }
-]
+  {
+    path: "/kavun",
+    element: <MainLayout />,
+    auth: true,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ],
+  },
+  {
+    path: '/kavun/auth',
+    element: <AuthLayout />,
+    children: [
+        {
+            path: 'login',
+            element: <Login />
+        },
+        {
+            path: 'register',
+            element: <Register /> 
+        }
+    ]
+}
+];
 
 // const authCheck = routes => routes.map((route) => {
 //     if(route?.auth) {
@@ -25,4 +42,4 @@ const routes = [
 //     return route
 // })
 
-export default routes
+export default routes;

@@ -2,10 +2,10 @@ import * as Yup from "yup"
 
 Yup.setLocale({
     mixed: {
-        required: "Bu alan zorunludur!"
+        required: ""
     },
     string: {
-        email: "Geçerli bir e-posta adresi girin!"
+        email: ""
     }
 })
 

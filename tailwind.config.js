@@ -6,7 +6,19 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        dcdark: "#292841"
+        brand: '#0095f6',
+        link: '#00376b',
+        input: '#fafafa',
+        kavun: "#00a295",
+        kavunLight: "#3dcda7",
+        turtlesXL: "#46a094",
+        turtlesL: "#6bbd99",
+        turtlesM: "#aecfa4",
+      },
+      backgroundImage: {
+        'logo-pattern': "url('../public/images/back-comp.jpg')",
+        'back-blur': "url('../public/images/back-blur.jpg')",
+        'tost': "url('../public/images/tost.jpg')",
       }
     },
   },
