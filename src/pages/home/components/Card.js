@@ -25,25 +25,29 @@ const Card = () => {
       >
         <div
           className={classNames({
-            "w-1/2 rounded-lg bg-back-blur bg-cover": true,
-            "h-56 w-full": wphone,
-            "h-96": !wphone,
+            "rounded-lg bg-back-blur bg-cover": true,
+            "h-48 w-full": wphone,
+            "h-96 w-1/2": !wphone,
           })}
         >
           {/*window.screen.width*/}
         </div>
-        <div className="w-1/2 flex items-center gap-x-6">
+        <div className={classNames({
+          "flex items-center gap-x-6": true,
+          "w-full" : wphone,
+          "w-1/2" : !wphone 
+        })}>
           <div
             className={classNames({
               "rounded-lg bg-[#46a094] bg-cover": true,
-              "h-24 w-full": wphone,
+              "h-28 w-full": wphone,
               "w-1/2 h-96": !wphone,
             })}
           ></div>
           <div
             className={classNames({
               "rounded-lg bg-[#fdd037]": true,
-              "h-24 w-full": wphone,
+              "h-28 w-full": wphone,
               "w-1/2 h-96": !wphone,
             })}
           ></div>
@@ -56,30 +60,78 @@ const Card = () => {
           "flex-col gap-y-6": wphone,
         })}
       >
-        <div className="w-1/2 flex flex-col mt-6">
-          <div className="bg-[#6bbd99] w-full h-48 rounded-lg"></div>
+        <div className={classNames({
+          "flex flex-col mt-6": true,
+          "w-full":wphone,
+          "w-1/2":!wphone
+        })}>
+          <div className={classNames({
+            "bg-[#6bbd99] w-full rounded-lg": true,
+            "h-28": wphone,
+            "h-48": !wphone
+          })}></div>
           <div className="flex mt-6 gap-x-6">
-            <div className="bg-[#aecfa4] w-1/2 h-48 rounded-lg"></div>
-            <div className="bg-[#c4e8c2] w-1/2 h-48 rounded-lg"></div>
+            <div className={classNames({
+              "bg-[#aecfa4] w-1/2 rounded-lg": true, 
+              "h-20" : wphone,
+              "h-48": !wphone
+            })}></div>
+            <div className={classNames({
+              "bg-[#c4e8c2] w-1/2 rounded-lg": true, 
+              "h-20" : wphone,
+              "h-48": !wphone
+            })}></div>
           </div>
         </div>
 
-        <div className="w-1/2 flex items-center gap-x-6 mt-6">
+        <div className={classNames({
+          "flex items-center gap-x-6": true,
+          "w-full": wphone,
+          "mt-6 w-1/2": !wphone
+        })}>
           <div className="w-1/2 flex flex-col">
             <div className="flex gap-x-6 mb-6">
-              <div className="bg-[#0295a9] w-1/2 h-48 rounded-lg"></div>
-              <div className="bg-[#12adc1] w-1/2 h-48 rounded-lg"></div>
+              <div className={classNames({
+                "bg-[#0295a9] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
+              <div className={classNames({
+                "bg-[#12adc1] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
             </div>
-            <div className="bg-[#e65c4f] w-full h-48 rounded-lg mb-6"></div>
+            <div className={classNames({
+              "bg-[#e65c4f] w-full rounded-lg mb-6": true,
+              "h-20": wphone,
+              "h-48": !wphone
+            })}></div>
           </div>
           <div className="w-1/2 flex flex-col">
             <div className="flex gap-x-6 mb-6">
-              <div className="bg-[#41436a] w-1/2 h-48 rounded-lg"></div>
-              <div className="bg-[#974063] w-1/2 h-48 rounded-lg"></div>
+            <div className={classNames({
+                "bg-[#41436a] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
+              <div className={classNames({
+                "bg-[#974063] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
             </div>
             <div className="flex gap-x-6 mb-6">
-              <div className="bg-[#f54768] w-1/2 h-48 rounded-lg"></div>
-              <div className="bg-[#ff9677] w-1/2 h-48 rounded-lg"></div>
+            <div className={classNames({
+                "bg-[#f54768] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
+              <div className={classNames({
+                "bg-[#ff9677] w-1/2 rounded-lg": true,
+                "h-20": wphone,
+                "h-48": !wphone
+              })}></div>
             </div>
           </div>
         </div>
