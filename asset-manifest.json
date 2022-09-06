@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/kavun/static/css/main.6c639483.css",
-    "main.js": "/kavun/static/js/main.c002c2a3.js",
+    "main.css": "/kavun/static/css/main.a696d265.css",
+    "main.js": "/kavun/static/js/main.9db6c863.js",
+    "static/media/back-comp.jpg": "/kavun/static/media/back-comp.590833d3926e1b776281.jpg",
+    "static/media/back-blur.jpg": "/kavun/static/media/back-blur.3944d8442c243578d92b.jpg",
     "index.html": "/kavun/index.html",
-    "main.6c639483.css.map": "/kavun/static/css/main.6c639483.css.map",
-    "main.c002c2a3.js.map": "/kavun/static/js/main.c002c2a3.js.map"
+    "main.a696d265.css.map": "/kavun/static/css/main.a696d265.css.map",
+    "main.9db6c863.js.map": "/kavun/static/js/main.9db6c863.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c639483.css",
-    "static/js/main.c002c2a3.js"
+    "static/css/main.a696d265.css",
+    "static/js/main.9db6c863.js"
   ]
 }
