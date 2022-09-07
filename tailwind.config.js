@@ -18,7 +18,7 @@ module.exports = {
       backgroundImage: {
         'logo-pattern': "url('../public/images/back-comp.jpg')",
         'back-blur': "url('../public/images/back-blur.jpg')",
-        'tost': "url('../public/images/tost.jpg')",
+        'wine': "url('../public/images/wine.jpg')",
       }
     },
   },
