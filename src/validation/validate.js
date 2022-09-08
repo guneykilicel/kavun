@@ -2,10 +2,10 @@ import * as Yup from "yup"
 
 Yup.setLocale({
     mixed: {
-        required: ""
+        required: <div className="text-red-500 font-bold text-3xl flex items-center pr-1">!</div>
     },
     string: {
-        email: ""
+        email: <div className="text-red-500 font-bold text-3xl flex items-center pr-1">!</div>
     }
 })
 

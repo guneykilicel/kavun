@@ -1,4 +1,4 @@
-const Button = ({ type = "button", children, ...props }) => {
+const Button = ({ type = "button", color="brand", children, ...props }) => {
   return (
     <>
       <button

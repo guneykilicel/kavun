@@ -19,6 +19,7 @@ module.exports = {
         'logo-pattern': "url('../public/images/back-comp.jpg')",
         'back-blur': "url('../public/images/back-blur.jpg')",
         'wine': "url('../public/images/wine.jpg')",
+        'domates': "url('../public/images/domates.jpg')",
       }
     },
   },
