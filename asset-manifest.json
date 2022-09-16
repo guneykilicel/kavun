@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kavun/static/css/main.82430499.css",
-    "main.js": "/kavun/static/js/main.993a7152.js",
+    "main.css": "/kavun/static/css/main.60f1e754.css",
+    "main.js": "/kavun/static/js/main.69f76037.js",
     "static/media/back-comp.jpg": "/kavun/static/media/back-comp.590833d3926e1b776281.jpg",
     "index.html": "/kavun/index.html",
-    "main.82430499.css.map": "/kavun/static/css/main.82430499.css.map",
-    "main.993a7152.js.map": "/kavun/static/js/main.993a7152.js.map"
+    "main.60f1e754.css.map": "/kavun/static/css/main.60f1e754.css.map",
+    "main.69f76037.js.map": "/kavun/static/js/main.69f76037.js.map"
   },
   "entrypoints": [
-    "static/css/main.82430499.css",
-    "static/js/main.993a7152.js"
+    "static/css/main.60f1e754.css",
+    "static/js/main.69f76037.js"
   ]
 }
