@@ -5,8 +5,11 @@ import "./Card.css";
 import Button from "../../../components/Button";
 import { AiFillFacebook } from "react-icons/ai";
 import ContentCard from "./ContentCard";
+import { useSelector } from "react-redux";
 
 const Card = () => {
+  const user = useSelector((state) => state.auth.user);
+
   const [wsize, setWsize] = useState(window.screen.width);
   const [wphone, setWphone] = useState(false);
 
@@ -18,7 +21,8 @@ const Card = () => {
   return (
     <div
       className={classNames({
-        "mt-5": !wphone,
+        "px-6 py-3": wphone,
+        "mt-5": !wphone
       })}
     >
       <div
@@ -38,18 +42,24 @@ const Card = () => {
           {/* {console.log(wphone)} */}
           {/* <div className="w-1/12 mt-5"><NavBar /></div> */}
           <h1 className={classNames({
-            "text-4xl font-bold text-white": true,
-            "mt-20": wphone
-          })}>Merhaba Güney</h1>
-          <div className="w-full flex justify-center gap-x-6 px-6 mt-10">
+            "font-bold text-white": true,
+            "text-center text-3xl": wphone,
+            "text-4xl": !wphone
+          })}>Merhaba {user.fullName}</h1>
+          <h3 className={classNames({
+            "text-xs font-semibold text-white": true,
+            "text-center": wphone
+          })}>Henüz Yapım Aşamasındayız :) </h3>
+          {/* <div className="w-full flex justify-center gap-x-6 px-6 mt-10">
             <ContentCard children={"Detoxlar..."} imgSrc={"https://images.pexels.com/photos/291531/pexels-photo-291531.jpeg?auto=compress&cs=tinysrgb&w=1600"} wphone={wphone} />
             <ContentCard children={"Sağlıklı yaşam..."} imgSrc={"https://images.pexels.com/photos/2568459/pexels-photo-2568459.jpeg?auto=compress&cs=tinysrgb&w=1600"} wphone={wphone} />
-          </div>
+             
+          </div> */}
         </div>
         <div
           className={classNames({
             "rounded-lg bg-[#fdd037]": true,
-            "h-24 w-full mt-16": wphone,
+            "h-24 w-full": wphone,
             "w-1/3 h-96": !wphone,
           })}
         ></div>

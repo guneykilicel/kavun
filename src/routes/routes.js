@@ -3,6 +3,8 @@ import Login from "../pages/auth/login";
 import MainLayout from "../pages/layout";
 import AuthLayout from "../pages/auth";
 import Register from "../pages/auth/register";
+import PrivateRoute from "../components/PrivateRoute";
+import Logout from "../pages/logout";
 
 const routes = [
   {
@@ -13,7 +15,11 @@ const routes = [
       {
         index: true,
         element: <Home />
-      }
+      },
+      {
+				path: 'logout',
+				element: <Logout />
+			},
     ],
   },
   {
@@ -32,14 +38,14 @@ const routes = [
 }
 ];
 
-// const authCheck = routes => routes.map((route) => {
-//     if(route?.auth) {
-//         route.element = <PrivateRoute>{route.element}</PrivateRoute>
-//     }
-//     if(route?.children) {
-//         route.children = authCheck(route.children)
-//     }
-//     return route
-// })
+const authCheck = routes => routes.map((route) => {
+  if(route?.auth) {
+      route.element = <PrivateRoute>{route.element}</PrivateRoute>
+  }
+  if(route?.children) {
+      route.children = authCheck(route.children)
+  }
+  return route
+})
 
-export default routes;
+export default authCheck(routes)

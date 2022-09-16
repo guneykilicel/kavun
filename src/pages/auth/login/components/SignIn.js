@@ -1,5 +1,5 @@
 import { Form, Formik } from "formik"
-import { Link } from "react-router-dom"
+import { Link, Navigate, useLocation } from "react-router-dom"
 import { LoginSchema } from "../../../../validation/login-schema" 
 
 import Button from "../../../../components/Button"
@@ -8,9 +8,23 @@ import Icon from "../../../../components/Icon"
 import Input from "../../../../components/Input"
 import './SignIn.css'
 import { AiFillFacebook } from "react-icons/ai";
+import { useSelector } from "react-redux"
+import { login } from "../../../../firebase.js"
 
 
 const SignIn = ()=>{
+
+  const user = useSelector((state) => state.auth.user);
+
+  const location = useLocation();
+  if (user) {
+    return <Navigate to={location.state?.return_url || "/"} replace={true} />;
+  } //giriş yaparken yönlendiriyor
+
+  const handleSubmit = async (values, actions) => {
+    await login(values.username, values.password);
+  };
+
     return(
       <div className="bg-logo-pattern w-full h-screen bg-cover">
       <div className="grid place-content-start md:place-content-center justify-center flex items-center mt-60">
@@ -26,7 +40,7 @@ const SignIn = ()=>{
                 username: "",
                 password: "",
               }}
-            //   onSubmit={handleSubmit}
+              onSubmit={handleSubmit}
             >
               {({ isSubmitting, isValid, dirty, values }) => (
                 <Form className="grid gap-y-1.5">

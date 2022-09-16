@@ -22,13 +22,12 @@ import { collection, getDocs } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyC-biBkpbh5IiBliaOYa9jXPFGYwC9HTto",
-	authDomain: "kavun-bf78d.firebaseapp.com",
-	projectId: "kavun-bf78d",
-	storageBucket: "kavun-bf78d.appspot.com",
-	messagingSenderId: "581617354547",
-	appId: "1:581617354547:web:4e0b42c18c46210abfe046",
-	measurementId: "G-5R5E3TF0G3"
+	apiKey: "AIzaSyCEEfbFfUa3QaxchGFG-uNeLuedY6RFO_M",
+	authDomain: "kavun-30126.firebaseapp.com",
+	projectId: "kavun-30126",
+	storageBucket: "kavun-30126.appspot.com",
+	messagingSenderId: "753976129938",
+	appId: "1:753976129938:web:8324adb2e8fec5711b294b"
   };
 
 // Initialize Firebase

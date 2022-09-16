@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RegisterSchema } from "../../../../validation/register-schema";
 import Button from "../../../../components/Button";
 import Separator from "../../../../components/Separator";
@@ -6,8 +6,21 @@ import Icon from "../../../../components/Icon";
 import Input from "../../../../components/Input";
 import { Form, Formik } from "formik";
 import { AiFillFacebook } from "react-icons/ai";
+import { register } from "../../../../firebase.js";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSubmit = async (values, actions) => {
+    const response = await register(values);
+    if (response) {
+      navigate(location.state?.return_url || "/kavun", {
+        replace: true,
+      });
+    }
+  };
+
   return (
     <div className="bg-logo-pattern w-full h-screen bg-cover">
       <div className="grid place-content-start md:place-content-center justify-center flex items-center mt-36">
@@ -29,7 +42,7 @@ const SignUp = () => {
               username: "",
               password: "",
             }}
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
           >
             {({ isSubmitting, isValid, dirty, values }) => (
               <Form className="grid gap-y-1.5">
