@@ -38,6 +38,11 @@ const Card = () => {
             "h-96 w-2/3": !wphone,
           })}
         >
+          <div className="sticky">
+            <div className="fixed top-0 left-0">
+            <NavBar />
+            </div>
+          </div>
           {/*window.screen.width*/}
           {/* {console.log(wphone)} */}
           {/* <div className="w-1/12 mt-5"><NavBar /></div> */}

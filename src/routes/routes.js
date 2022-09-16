@@ -5,7 +5,9 @@ import AuthLayout from "../pages/auth";
 import Register from "../pages/auth/register";
 import PrivateRoute from "../components/PrivateRoute";
 import Logout from "../pages/logout";
-
+import ProfileLayout from "../pages/profile";
+import ProfilePosts from '../pages/profile/components/posts'
+import ProfileTagged from '../pages/profile/components/tagged'
 const routes = [
   {
     path: "/kavun",
@@ -16,6 +18,20 @@ const routes = [
         index: true,
         element: <Home />
       },
+      {
+				path: ':username',
+				element: <ProfileLayout />,
+				children: [
+					{
+						index: true,
+						element: <ProfilePosts />
+					},
+					{
+						path: 'tagged',
+						element: <ProfileTagged />
+					}
+				]
+			},
       {
 				path: 'logout',
 				element: <Logout />
