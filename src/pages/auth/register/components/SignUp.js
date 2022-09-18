@@ -7,6 +7,7 @@ import Input from "../../../../components/Input";
 import { Form, Formik } from "formik";
 import { AiFillFacebook } from "react-icons/ai";
 import { register } from "../../../../firebase.js";
+import { Toaster } from "react-hot-toast";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const SignUp = () => {
 
   return (
     <div className="bg-logo-pattern w-full h-screen bg-cover">
+      <Toaster position="top-right" />
       <div className="grid place-content-start md:place-content-center justify-center flex items-center mt-36">
         <div className="bg-[#fdd037] w-[350px] grid gap-y-2.5 bg-white px-[40px] pt-10 pb-2 rounded-xl">
           <div className=" flex items-center justify-center pb-4 rounded-lg">

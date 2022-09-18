@@ -10,6 +10,7 @@ import './SignIn.css'
 import { AiFillFacebook } from "react-icons/ai";
 import { useSelector } from "react-redux"
 import { login } from "../../../../firebase.js"
+import { Toaster } from "react-hot-toast"
 
 
 const SignIn = ()=>{
@@ -27,6 +28,7 @@ const SignIn = ()=>{
 
     return(
       <div className="bg-logo-pattern w-full h-screen bg-cover">
+        <Toaster position="top-right" />
       <div className="grid place-content-start md:place-content-center justify-center flex items-center mt-60">
         <div className="w-[350px] grid gap-y-2.5">
           <div className="bg-[#fdd037] px-[40px] pt-10 pb-2 rounded-xl">

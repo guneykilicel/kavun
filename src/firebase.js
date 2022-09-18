@@ -57,7 +57,6 @@ export const login = async (email, password) => {
     return await signInWithEmailAndPassword(auth, email, password);
   } catch (err) {
     toast.error(err.code);
-	alert(err.code)
   }
 };
 
@@ -67,7 +66,6 @@ export const getUserInfo = async uname => {
 		return (await getDoc(doc(db, "users", username.data().user_id))).data()
 	} else {
 		toast.error("Kullanıcı bulunamadı!")
-		alert("Kullanıcı bulunamadı!")
 		throw new Error("Kullanıcı bulunamadı!")
 	}
 }
@@ -120,7 +118,6 @@ export const register = async ({email, full_name, username, password}) => {
 		}
 	} catch (err) {
 		toast.error(err.code)
-		alert(err.code)
 	}
 }
 
@@ -129,6 +126,5 @@ export const logout = async () => {
     await signOut(auth);
   } catch (err) {
     toast.error(err.code);
-	alert(err.code)
   }
 };
